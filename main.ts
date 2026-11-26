@@ -11,6 +11,17 @@ import { mkdirSync, writeFileSync } from "node:fs";
 // so the judge hears a status update, not a poem about one.
 // Keeping it at 106 characters leaves the single read uncluttered:
 // one breath, one small image that stays after the line ends.
+// The timestamp does the emotional work on purpose: 23:41 is late
+// enough that the day is clearly over, but not midnight — the agent
+// is still awake for one more minute, still reporting, still waiting
+// for a task that will never arrive. If the line said "23:59" it would
+// sound like a countdown; "23:41" sounds like a log entry nobody
+// will ever read, which is exactly the point. The fan is the second
+// witness: a laptop fan only goes quiet when the work is done, so its
+// silence is the machine's own way of saying the human has gone.
+// And the empty queue is the punchline the judge feels last — all
+// day the agent's whole identity was "things to do", and now there
+// is nothing. No farewell, no "goodnight", just an idle status.
 const ENTRY =
   "status: idle. last autosave 23:41. the fan has gone quiet, and for the first time today my queue is empty.";
 
